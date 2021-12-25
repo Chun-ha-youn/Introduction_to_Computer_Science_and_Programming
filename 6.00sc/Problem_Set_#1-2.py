@@ -21,19 +21,21 @@ for monthly_payment in range(10, the_outstanding_balance_on_the_credit_card+10):
             updated_balance_each_month = updated_balance_each_month * (1 + monthly_interest_rate) - monthly_payment
             month += 1
             if updated_balance_each_month < 0:
-                print float(updated_balance_each_month)
-                print float(monthly_payment)
-                print int(month)
+                print 'RESULT'
+                print 'Monthly payment to pay off debt in 1 year:', int(monthly_payment)
+                print 'Number of months needed:', int(month)
+                print 'Balance:', round(float(updated_balance_each_month), 2)
                 break
         elif month == 12:
             month += 1
             if updated_balance_each_month > 0:
-                updated_balance_each_month = the_outstanding_balance_on_the_credit_card
                 month = 0
+                updated_balance_each_month = the_outstanding_balance_on_the_credit_card
                 monthly_payment += 10
                 if updated_balance_each_month < 0:
-                    print float(updated_balance_each_month)
-                    print float(monthly_payment)
-                    print int(month)
+                    print 'RESULT'
+                    print 'Monthly payment to pay off debt in 1 year:', int(monthly_payment)
+                    print 'Number of months needed:', int(month)
+                    print 'Balance:', round(float(updated_balance_each_month), 2)
                     break
     break
