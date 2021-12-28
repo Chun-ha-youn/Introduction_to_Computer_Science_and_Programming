@@ -1,7 +1,6 @@
 # coding=utf-8
 # Problem Set 1-3
 # 2021_12_25
-import math
 
 """
 Using Bisection Search to Make the Program Faster
@@ -26,8 +25,7 @@ while monthly_payment < the_outstanding_balance_on_the_credit_card + 0.01:
                 print 'RESULT'
                 print 'Monthly payment to pay off debt in 1 year:', round(float(monthly_payment), 2)
                 print 'Number of months needed:', int(month)
-                #print math.ceil(float(updated_balance_each_month)*100)
-                print 'Balance:',  round(float(updated_balance_each_month),2)
+                print 'Balance:', round(float(updated_balance_each_month), 2)
                 break
         elif month == 12:
             month += 1
@@ -39,7 +37,6 @@ while monthly_payment < the_outstanding_balance_on_the_credit_card + 0.01:
                 print 'RESULT'
                 print 'Monthly payment to pay off debt in 1 year:', round(float(monthly_payment), 2)
                 print 'Number of months needed:', int(month)
-                #print math.ceil(float(updated_balance_each_month) * 100)
-                print 'Balance:', round(float(updated_balance_each_month),2)
+                print 'Balance:', round(float(updated_balance_each_month), 2)
                 break
     break
